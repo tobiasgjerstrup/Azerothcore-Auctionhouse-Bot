@@ -4,7 +4,9 @@ import (
 	"encoding/csv"
 	"flag"
 	"fmt"
+	"math/rand"
 	"os"
+	"strconv"
 )
 
 func main() {
@@ -51,6 +53,52 @@ func main() {
 			recordMap[h] = row[i]
 		}
 
-		fmt.Println(recordMap["test2"])
+		if !isInt(recordMap["ID"]) {
+			panic("ID Is Missing Or Is Not A Number")
+		}
+		if !isInt(recordMap["PriceMin"]) {
+			panic("PriceMin Is Missing Or Is Not A Number")
+		}
+		if !isInt(recordMap["PriceMax"]) {
+			panic("PriceMax Is Missing Or Is Not A Number")
+		}
+		if !isInt(recordMap["StackCountMin"]) {
+			panic("StackCountMin Is Missing Or Is Not A Number")
+		}
+		if !isInt(recordMap["StackCountMax"]) {
+			panic("StackCountMax Is Missing Or Is Not A Number")
+		}
+		if !isInt(recordMap["ListingsMin"]) {
+			panic("ListingsMin Is Missing Or Is Not A Number")
+		}
+		if !isInt(recordMap["ListingsMax"]) {
+			panic("ListingsMax Is Missing Or Is Not A Number")
+		}
+
+		// fmt.Printf("ID: %s, PriceMin: %s, PriceMax: %s, StackCountMin: %s, StackCountMax: %s, ListingsMin: %s, ListingsMax: %s\n", recordMap["ID"], recordMap["PriceMin"], recordMap["PriceMax"], recordMap["StackCountMin"], recordMap["StackCountMax"], recordMap["ListingsMin"], recordMap["ListingsMax"])
+
+		id, _ := strconv.Atoi(recordMap["ID"])
+		priceMin, _ := strconv.Atoi(recordMap["PriceMin"])
+		priceMax, _ := strconv.Atoi(recordMap["PriceMax"])
+		stackCountMin, _ := strconv.Atoi(recordMap["StackCountMin"])
+		stackCountMax, _ := strconv.Atoi(recordMap["StackCountMax"])
+		listingsMax, _ := strconv.Atoi(recordMap["ListingsMax"])
+		listingsMin, _ := strconv.Atoi(recordMap["ListingsMin"])
+
+		n := rand.Intn(listingsMax-listingsMin+1) + listingsMin
+		for range n {
+			price := rand.Intn(priceMax-priceMin+1) + priceMin
+			count := rand.Intn(stackCountMax-stackCountMin+1) + stackCountMin
+			listItem(id, price, count)
+		}
 	}
+}
+
+func isInt(s string) bool {
+	_, err := strconv.Atoi(s)
+	return err == nil
+}
+
+func listItem(itemID int, price int, count int) {
+	fmt.Printf("Created listing ~ ID: %d, Price: %d, Count: %d\n", itemID, price, count)
 }
