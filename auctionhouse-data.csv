@@ -1,3 +1,151 @@
 ItemName,ID,PriceMin,PriceMax,StackCountMin,StackCountMax,ListingsMin,ListingsMax
-Linen Cloth,1,900,1100,1,20,20,40
-Wool Cloth,2,1500,2000,1,20,20,40
+Copper Ore,2058,100,300,1,20,5,20
+Tin Ore,2059,300,700,1,20,5,15
+Silver Ore,2060,800,2000,1,10,2,8
+Iron Ore,3577,500,1500,1,20,5,15
+Gold Ore,3578,1000,3000,1,10,2,8
+Mithril Ore,3858,1500,4000,1,20,5,15
+Truesilver Ore,3859,2000,5000,1,10,2,8
+Thorium Ore,10620,3000,10000,1,20,5,20
+
+
+Linen Cloth,2589,100,300,1,20,10,30
+Wool Cloth,2592,500,1200,1,20,5,20
+Silk Cloth,4306,500,1500,1,20,5,20
+Mageweave Cloth,4338,1000,2500,1,20,5,20
+Runecloth,14047,1500,4000,1,20,10,30
+Felcloth,14256,40000,120000,1,10,2,10
+Mooncloth,14342,80000,200000,1,5,1,5
+
+
+Light Leather,2318,200,600,1,20,10,30
+Medium Leather,2319,400,1200,1,20,10,30
+Heavy Leather,4234,800,2000,1,20,5,20
+Thick Leather,4304,1200,3000,1,20,5,20
+Rugged Leather,8170,2000,6000,1,20,5,20
+
+Light Hide,783,500,1500,1,5,2,10
+Medium Hide,4232,1000,3000,1,5,2,10
+Heavy Hide,4235,2000,6000,1,5,2,10
+Thick Hide,8169,3000,8000,1,5,2,10
+Rugged Hide,8171,4000,10000,1,5,2,10
+
+Deviate Scale,6470,200,600,1,10,5,15
+Turtle Scale,8167,500,1500,1,10,5,15
+Worn Dragonscale,8165,1500,4000,1,10,3,10
+Green Dragonscale,15412,3000,8000,1,10,2,8
+Blue Dragonscale,15415,4000,10000,1,10,2,8
+Red Dragonscale,15414,4000,10000,1,10,2,8
+Black Dragonscale,15416,5000,12000,1,10,2,8
+
+Devilsaur Leather,15417,20000,60000,1,5,1,5
+Core Leather,17012,30000,80000,1,5,1,5
+
+
+Peacebloom,2447,50,150,1,20,10,30
+Silverleaf,765,50,150,1,20,10,30
+Earthroot,2449,100,300,1,20,10,30
+Mageroyal,785,200,600,1,20,10,25
+Briarthorn,2450,300,900,1,20,10,25
+Stranglekelp,3820,300,900,1,20,5,15
+Bruiseweed,2453,300,900,1,20,10,25
+Wild Steelbloom,3355,500,1500,1,20,5,15
+Grave Moss,3369,800,2000,1,20,5,15
+Kingsblood,3356,300,900,1,20,10,25
+Liferoot,3357,400,1200,1,20,10,25
+Fadeleaf,3818,800,2000,1,20,5,15
+Goldthorn,3821,1000,3000,1,20,5,15
+Khadgar's Whisker,3358,800,2000,1,20,10,25
+Wintersbite,3819,1000,3000,1,20,5,15
+Firebloom,4625,1000,3000,1,20,5,15
+Purple Lotus,8831,800,2000,1,20,10,25
+Arthas' Tears,8836,800,2000,1,20,10,25
+Sungrass,8838,1000,3000,1,20,10,25
+Blindweed,8839,1000,3000,1,20,5,15
+Ghost Mushroom,8845,2000,6000,1,20,3,10
+Gromsblood,8846,2000,6000,1,20,5,15
+Golden Sansam,13464,1500,4000,1,20,10,25
+Dreamfoil,13463,2000,6000,1,20,10,25
+Mountain Silversage,13465,3000,8000,1,20,5,15
+Plaguebloom,13466,3000,9000,1,20,5,15
+Icecap,13467,3000,9000,1,20,5,15
+Black Lotus,13468,20000,60000,1,1,1,5
+
+
+Elemental Fire,7068,1000,3000,1,10,5,15
+Elemental Earth,7067,800,2000,1,10,5,15
+Elemental Water,7070,1500,4000,1,10,5,15
+Elemental Air,7069,2000,6000,1,10,5,15
+
+Essence of Fire,7078,4000,12000,1,10,3,10
+Essence of Earth,7076,3000,9000,1,10,3,10
+Essence of Water,7080,5000,15000,1,10,3,10
+Essence of Air,7082,8000,20000,1,10,3,10
+
+Heart of Fire,7077,1500,4000,1,10,5,15
+Core of Earth,7075,1500,4000,1,10,5,15
+Globe of Water,7079,2000,6000,1,10,5,15
+Breath of Wind,7081,2000,6000,1,10,5,15
+Living Essence,12803,3000,9000,1,10,3,10
+Ichor of Undeath,7972,800,2000,1,10,5,15
+Heart of the Wild,10286,1500,4000,1,10,5,15
+
+
+Malachite,774,200,600,1,10,10,25
+Tigerseye,818,200,600,1,10,10,25
+Shadowgem,1210,500,1500,1,10,10,25
+Jade,1529,800,2000,1,10,5,15
+Citrine,3864,1500,4000,1,10,5,15
+Aquamarine,7909,3000,8000,1,10,5,15
+Star Ruby,7910,4000,10000,1,10,5,15
+Azerothian Diamond,12800,8000,20000,1,10,3,10
+Blue Sapphire,12361,8000,20000,1,10,3,10
+Large Opal,12799,6000,15000,1,10,3,10
+Huge Emerald,12364,8000,20000,1,10,3,10
+Arcane Crystal,12363,20000,60000,1,10,1,5
+
+
+Light Feather,17056,50,200,1,20,10,30
+Small Egg,6889,50,200,1,20,10,25
+Large Fang,5637,200,600,1,10,5,15
+Large Venom Sac,1288,500,1500,1,10,5,15
+Small Venom Sac,1475,200,600,1,10,5,15
+Spider Silk,3182,800,2000,1,10,5,15
+Thick Spider Silk,4337,1500,4000,1,10,5,15
+Ironweb Spider Silk,14227,3000,9000,1,10,3,10
+
+Bear Jaw,11403,200,600,1,10,5,15
+Bear Flank,35562,200,600,1,10,5,15
+Boar Ribs,2677,100,300,1,10,10,25
+Raptor Egg,3685,200,600,1,10,10,25
+Raptor Hide,4461,300,900,1,10,5,15
+
+Chimera Leather,15423,3000,9000,1,10,3,10
+Warbear Leather,15419,4000,10000,1,10,3,10
+
+Shadowcat Hide,7428,800,2000,1,10,5,15
+Perfect Deviate Scale,6471,1000,3000,1,5,3,10
+Heavy Scorpid Scale,15408,2000,6000,1,10,3,10
+
+
+Deviate Fish,6522,500,1500,1,20,5,20
+Oily Blackmouth,6358,300,900,1,20,10,25
+Firefin Snapper,6359,400,1200,1,20,10,25
+Stonescale Eel,13422,2000,6000,1,20,5,15
+
+Raw Brilliant Smallfish,6291,20,80,1,20,10,25
+Raw Longjaw Mud Snapper,6289,20,80,1,20,10,25
+Raw Bristle Whisker Catfish,6308,50,150,1,20,10,25
+Raw Slitherskin Mackerel,6303,20,80,1,20,10,25
+
+Raw Rainbow Fin Albacore,6361,50,150,1,20,10,25
+Raw Rockscale Cod,6362,100,300,1,20,10,25
+
+Raw Nightfin Snapper,13759,1500,4000,1,20,5,15
+Raw Sunscale Salmon,13760,1500,4000,1,20,5,15
+Raw Whitescale Salmon,13889,1500,4000,1,20,5,15
+Raw Glossy Mightfish,13754,1000,3000,1,20,5,15
+Raw Redgill,13758,800,2000,1,20,5,15
+
+Darkclaw Lobster,13888,800,2000,1,20,5,15
+Winter Squid,13755,2000,6000,1,20,5,15
