@@ -19,10 +19,15 @@ func main() {
 
 	filePath := flag.String("file", "auctionhouse-data.csv", "path to csv file")
 	delimiter := flag.String("delimiter", ",", "the delimiter used in the csv file")
+	characterId := flag.Int("characterid", -1, "the ID for the character that lists the items")
 	flag.Parse()
 
 	csvFilePath := fmt.Sprintf("%s/%s", cwd, *filePath)
 	fmt.Printf("Reading CSV file: %s\n", csvFilePath)
+
+	if *characterId < 0 {
+		panic("flag -characterid is missing or is not a positive number")
+	}
 
 	file, err := os.Open(csvFilePath)
 	if err != nil {
@@ -89,7 +94,7 @@ func main() {
 		for range n {
 			price := rand.Intn(priceMax-priceMin+1) + priceMin
 			count := rand.Intn(stackCountMax-stackCountMin+1) + stackCountMin
-			listItem(id, price, count)
+			listItem(id, price, count, *characterId)
 		}
 	}
 }
@@ -99,6 +104,6 @@ func isInt(s string) bool {
 	return err == nil
 }
 
-func listItem(itemID int, price int, count int) {
-	fmt.Printf("Created listing ~ ID: %d, Price: %d, Count: %d\n", itemID, price, count)
+func listItem(itemID int, price int, count int, characterId int) {
+	fmt.Printf("Created listing ~ ID: %d, Price: %d, Count: %d. On character: %d\n", itemID, price, count, characterId)
 }
