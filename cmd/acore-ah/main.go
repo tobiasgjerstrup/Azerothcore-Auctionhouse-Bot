@@ -7,6 +7,8 @@ import (
 	"math/rand"
 	"os"
 	"strconv"
+
+	"Azerothcore-Auctionhouse-Bot/m/internal/mariadb"
 )
 
 func main() {
@@ -94,7 +96,7 @@ func main() {
 		for range n {
 			price := rand.Intn(priceMax-priceMin+1) + priceMin
 			count := rand.Intn(stackCountMax-stackCountMin+1) + stackCountMin
-			listItem(id, price, count, *characterId)
+			mariadb.InsertAuction(id, price, count, *characterId)
 		}
 	}
 }
@@ -102,8 +104,4 @@ func main() {
 func isInt(s string) bool {
 	_, err := strconv.Atoi(s)
 	return err == nil
-}
-
-func listItem(itemID int, price int, count int, characterId int) {
-	fmt.Printf("Created listing ~ ID: %d, Price: %d, Count: %d. On character: %d\n", itemID, price, count, characterId)
 }
